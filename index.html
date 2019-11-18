@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	
+	<title>Inverse Circles Game</title>
+	
+	<meta name="description" content="Inverse Circles Game by Alex Zhyrytovskyi"/>
+	<meta name="keywords" content="inverse circles game,alex zhyrytovskyi"/>
+	<meta name="robots" content="all"/>
+	
+	<link rel='stylesheet' type='text/css' href='style.css'/>
+	<script type="text/javascript" src="script.js"></script>
+	
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico"/>
+	<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png"/>
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png"/>
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png"/>
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png"/>
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png"/>
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png"/>
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png"/>
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png"/>
+	<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png"/>
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"/>
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png"/>
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"/>
+	<link rel="manifest" href="/favicon/manifest.json"/>
+	<meta name="msapplication-TileColor" content="#ffffff"/>
+	<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png"/>
+	<meta name="theme-color" content="#ffffff"/>
+	<!-- END OF: Favicon -->
+
+	<!-- Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45445930-6"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-45445930-6');
+	</script>
+	<!-- END OF: Google Analytics -->
+</head>
+
+<body onload="INVERSE_CIRCLES_GAME.init()">
+	<div class="ic-inverse-circles-game">
+		<div class="ic-inverse-circles-game-map">
+			<canvas class="ic-inverse-circles-game-map-canvas"></canvas>
+		</div>
+		<div class="ic-inverse-circles-game-info-block non-selectable">
+			<div class="ic-inverse-circles-game-info-block-keyborad-shortcuts-button ic-inverse-circles-game-info-block-button">
+				F1 - Keyboard shortcuts
+			</div>
+			<div class="ic-inverse-circles-game-info-block-new-game-button ic-inverse-circles-game-info-block-button">
+				F2 - New game
+			</div>
+			<a class="ic-inverse-circles-game-info-block-author-button ic-inverse-circles-game-info-block-button" href="http://alex.zhyrytovskyi.x10.name/" target="_blank">
+				Author: Alex Zhyrytovskyi, 2019
+			</a>
+		</div>
+	</div>
+
+	<div class="ic-keyboard-shortcuts-screen non-selectable">
+		<div class="ic-keyboard-shortcuts-screen-content">
+			<div class="ic-keyboard-shortcuts-screen-title">
+				Keyboard Shortcuts
+			</div>
+			<div class="ic-keyboard-shortcuts-screen-text">
+				UP ARROW - Move Up<br>
+				DOWN ARROW - Move Down<br>
+				LEFT ARROW - Move Left<br>
+				RIGHT ARROW - Move Right<br>
+				ENTER, SPACE - Toggle<br>
+				1 - Easy<br>
+				2 - Normal<br>
+				3 - Hard<br>
+				4 - Extra hard
+			</div>
+		</div>
+	</div>
+	
+	<div class="ic-new-game-screen non-selectable">
+		<div class="ic-new-game-screen-content">
+			<div class="ic-new-game-screen-title">
+				New Game
+			</div>
+			<div class="ic-new-game-screen-buttons non-selectable">
+				<div class="ic-new-game-screen-easy-button ic-new-game-screen-button">
+					1. Easy
+				</div>
+				<div></div>
+				<div class="ic-new-game-screen-medium-button ic-new-game-screen-button">
+					2. Medium
+				</div>
+				<div></div>
+				<div class="ic-new-game-screen-hard-button ic-new-game-screen-button">
+					3. Hard
+				</div>
+				<div></div>
+				<div class="ic-new-game-screen-extra-hard-button ic-new-game-screen-button">
+					4. Extra hard
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

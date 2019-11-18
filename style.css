@@ -1,0 +1,132 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+	overflow: hidden;
+	font: normal 14px Arial;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.non-selectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/*======================================================================================================================
+	Inverse Circles Game
+======================================================================================================================*/
+.ic-inverse-circles-game-map {
+	position: fixed;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+}
+.ic-inverse-circles-game-map-canvas {
+	display: block;
+}
+.ic-inverse-circles-game-info-block {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+}
+.ic-inverse-circles-game-info-block-button {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	padding: 8px 8px;
+	color: #484848;
+	transition: color 0.2s linear;
+	cursor: pointer;
+	text-decoration: none;
+}
+.ic-inverse-circles-game-info-block-button:hover {
+	color: #b8b8b8;
+}
+.ic-inverse-circles-game-info-block-button:active {
+	top: 1px;
+}
+/*======================================================================================================================
+	END OF: Inverse Circles Game
+======================================================================================================================*/
+
+/*======================================================================================================================
+	Keyboard Shortcuts Screen
+======================================================================================================================*/
+.ic-keyboard-shortcuts-screen {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.95);
+	color: #ffffff;
+}
+.ic-keyboard-shortcuts-screen-content {
+	position: absolute;
+	padding: 16px;
+	max-width: 100%;
+}
+.ic-keyboard-shortcuts-screen-title {
+	font-size: 24px;
+	font-weight: 700;
+}
+.ic-keyboard-shortcuts-screen-text {
+	margin-top: 24px;
+	line-height: 20px;
+}
+/*======================================================================================================================
+	END OF: Keyboard Shortcuts Screen
+======================================================================================================================*/
+
+/*======================================================================================================================
+	New Game Screen
+======================================================================================================================*/
+.ic-new-game-screen {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.95);
+	color: #ffffff;
+}
+.ic-new-game-screen-content {
+	position: absolute;
+	padding: 16px;
+	max-width: 100%;
+}
+.ic-new-game-screen-title {
+	font-size: 24px;
+	font-weight: 700;
+}
+.ic-new-game-screen-buttons {
+	margin-top: 24px;
+}
+.ic-new-game-screen-button {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	cursor: pointer;
+	padding: 2px 0;
+	font-size: 18px;
+}
+.ic-new-game-screen-button:active {
+	top: 1px;
+}
+.ic-new-game-screen-button:hover {
+	text-decoration: underline;
+}
+/*======================================================================================================================
+	END OF: New Game Screen
+======================================================================================================================*/
